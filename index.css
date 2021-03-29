@@ -1,0 +1,257 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica, Arial, sans-serif;
+	color: #666;
+	background: #f2f2f2; 
+	font-size: 1em;
+	line-height: 1.5em;
+	padding-top: 10%; /* Relleno superior igual a la altura de la cabecera*/
+}
+
+h1 {
+	font-size: 2em;
+	line-height: 1.5em;
+	margin: 15px 0;
+	text-align: center;
+	font-weight: 300;
+  }
+
+p {
+	font-size: 1em;
+	margin: 0 0 1.5em 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+#main-header {
+	background: #333;
+	color: white;
+	height: 15%;
+	
+	width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+	left: 0; /* Posicionamos la cabecera al lado izquierdo */
+	top: 0; /* Posicionamos la cabecera pegada arriba */
+	position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+}	
+	#main-header a {
+		color: white;
+	}
+
+.menu-icon{
+		display: none;
+}
+		
+.container {
+	width: 100%;
+	max-width: 850px;
+	margin: 0 auto;
+}
+	
+.logo-nav-container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+/*
+ * Logo
+ */
+.logo{
+	display: block;
+	font-size: 1em;
+	text-decoration: none;
+}
+				
+		
+/*
+ * Navegación
+ */
+.navigation {
+	float: right;
+}
+	.navigation ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		padding-right: 20px;
+	}
+	
+		.navigation ul li {
+			display: inline-block;
+			line-height: 80px;
+		}
+			
+			.navigation ul li a {
+				display: block;
+				padding: 0 10px;
+				text-decoration: none;
+				transition: all 0.4s linear;
+				border-radius: 0.1%;
+				font-size: 1.1em;
+			}
+			
+				.navigation ul li a:hover {
+					background: #4a4a4a;
+				}
+
+#main-footer {
+	background: #333;
+	color: white;
+	text-align: center;
+	padding: 20px;
+	margin-top: 40px;
+}
+	#main-footer p {
+		margin: 0;
+	}
+	
+	#main-footer a {
+		color: white;
+	}
+	
+@media only screen and (max-width: 1024px) {
+  body {
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica, Arial, sans-serif;
+	color: #666;
+	background: #f2f2f2; 
+	font-size: 1em;
+	line-height: 1.5em;
+	padding-top: 7em; /* Relleno superior igual a la altura de la cabecera*/
+}
+
+.container {
+	width: 85%;
+	max-width: 850px;
+	margin: 0 auto;
+}
+
+.logo-nav-container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 100%; /* hacemos que ocupe el ancho completo de la página */
+}
+
+h1 {
+	font-size: 1.5em;
+	line-height: 1.3em;
+	margin: 1% 0;
+	text-align: center;
+  }
+
+p {
+	font-size: 1em;
+	margin: 0 0 1em 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+#main-header {
+	background: #333;
+	color: white;
+	height: 6em;
+	width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+	left: 0; /* Posicionamos la cabecera al lado izquierdo */
+	top: 0; /* Posicionamos la cabecera pegada arriba */
+	position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+
+}	
+	#main-header a {
+		color: white;
+	}
+
+		#main-header a:hover {
+			background: #4a4a4a;
+	}
+
+
+.logo{
+	display: block;
+	font-size: 1.1em;
+	text-decoration: none;
+	padding-top: 2em;
+	padding-left: 2em;
+}
+
+.menu-icon{
+		display: block;
+		padding-top: 2em;
+		padding-right: 2em;
+		font-size: 1.1em;
+		cursor: pointer;
+}
+
+/*
+ * Navegación
+ */
+.navigation {
+	width: 100%;
+	margin-top: 1rem;
+}
+	.navigation ul {
+		display: none;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		padding-right: 0.25em;
+		line-height: 1.5em;
+		
+	}
+
+	.navigation ul.show {
+		display: block;
+		list-style: none;
+		background: #333;
+		line-height: 1.5em;
+	}
+	
+		.navigation ul li {
+			display: block;
+			line-height: 0.25em;
+		}
+			
+			.navigation ul li a {
+				display: block;
+				padding-left: 1em;
+				text-decoration: none;
+				transition: all 0.4s linear;
+				line-height: 1.5em;
+				font-size: 1.1em;
+				border-radius: 0.1%;
+				padding-bottom: 1.75em;
+				padding-top: 1em;
+				text-align: center;
+			}
+			
+				.navigation ul li a:hover {
+					background: #4a4a4a;
+				}
+				
+	
+#main-footer {
+	background: #333;
+	color: white;
+	text-align: center;
+	padding: 1.5%;
+	margin-top: 2%;
+	font-size: 1em;
+}
+	#main-footer p {
+		margin: 0;
+	}
+	
+	#main-footer a {
+		color: white;
+	}
+}

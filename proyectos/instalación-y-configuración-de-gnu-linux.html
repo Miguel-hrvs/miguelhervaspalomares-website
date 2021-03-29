@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<script src="jquery-3.5.1.min.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>MHP Home</title>
+
+        <link rel="stylesheet" href="../index.css">
+		<link rel="icon" href="../favicon.png" type="image/png">
+
+</head>
+
+<body>
+	
+	<header id="main-header">
+		<div class="container logo-nav-container">
+			<a href="../index.html" class="logo">MHP</a>
+			<span class="menu-icon">Menú</span>
+		<nav class="navigation">
+			<ul>
+				<li><a href="../index.html">Inicio</a></li>
+				<li><a href="/proyectos/proyectos.html">Proyectos</a></li>
+				<li><a href="/webs-recomendadas/webs-recomendadas.html">Webs recomendadas</a></li>
+				<li><a href="/herramientas-de-interés/herramientas-de-interés.html">Herramientas de interés</a></li>
+				<li><a href="/artículos/artículos.html">Artículos</a></li>
+			</ul>
+		</nav><!-- / nav -->
+		</div>
+	</header><!-- / #main-header -->
+
+	
+	<main class="main">
+		<div class="container">
+			
+			<header>
+				<h1>Instalación y configuración de un sistema gnu-linux</h1>
+			</header>
+			
+			
+			<div class="content">
+		 <p>
+            Bienvenidos/as a la guía de instalación de sistemas gnu-linux, después de unos 4 años trasteando como cualquier usuario, me gustaría compartir lo que he ido aprendiendo a lo largo de este tiempo, para que así no hos sintais desamparados buscando lo que quereis en google una y otra vez, así que aquí trataré de condensar toda esa información en un mismo sitio, en este caso, instalaremos debian con el entorno de escritorio xfce, que son los que más me gustan, además de que rinden muy bien en cualquier ordenador, y, aunque te recomienden otros entornos, aunque tengas un ordenador potente te recomiendo exprimirlo al máximo en vez de perder recursos a lo "tonto". La parte en la que configuramos el sistema, al igual que la parte en la que creamos el disco de arranque es igual en los demás sistemas gnu-linux, (aunque la herramienta de instalación de programas será diferente y el instalador del sistema puede ser distinto, (aunque el de debian y ubuntu si no son iguales, son muy parecidos)). ¡Empecemos!
+         </p>
+
+	<p>
+		 Antes de nada, deberemos descargar la imagen iso del sistema desde el sitio web oficial, enlazo la <a href="https://cdimage.debian.org/images/unofficial/non-free/images-including-firmware/10.8.0-live+nonfree/amd64/iso-hybrid/">dirección,</a> tendrás que seleccionar la que pone: debian-live-10.8.0-amd64-xfce+nonfree.iso. (Nota: pongo el sistema con los drivers privativos, porque si nos bajamos el sistema únicamente con los drivers libres, seguramente nos de algún problema (recomiendo que el tema de instalar un sistema 100%libre lo dejemos para cuando vayamos cogiendo experiencia), en ubuntu (y derivados) vienen en la imagen estándar). Una vez la hayamos descargado, tendremos que crear un pendrive arrancable con el sistema descargado, usaremos <a href="https://www.balena.io/etcher/ "> balena etcher </a> que suele ser infalible. Recomiendo que tengas un backup de tus archivos por si acaso algo sale mal (que aunque no sea lo habitual nunca se sabe si puedes perder windows y tengas que reinstalarlo (trata de hacerlo en un fin de semana que tengas libre), la licencia de windows se suele anexionar junto a tu correo electrónico con el que tengas tu usuario en windows si no tienes que tener la clave escrita en algún sitio si es de estas que se compran por 10 euros en internet). 
+	 </p>
+
+     <p>
+         Ahora, tendremos que hacer unas cosas antes de empezar a instalar el sistema, (estos son unos pasos por si queremos hacer dual boot con windows, si no, haced solamente el paso de la bios y seguid con el párrafo siguiente): Primero abriremos la herramienta de discos de windows, seleccionamos el disco c: y damos click derecho para seleccionar redimensionar, elegimos el espacio que queremos darle a debian, ahora desactivaremos el arranque rápido de windows 10 que suele dar problemas. Una vez echo, reiniciaremos el sistema y accederemos a la bios del ordenador, en ella, ve al menú de preferencia de discos y dejamos el disco duro más arriba que windows boot manager, los mismo con los puertos usb. Recomiendo que activeis el menu de la tecla f12, puesto que al encender el ordenador también odeis darle a esa tecla y elegir desde dónde arrancar. Reiniciamos guardando los cambios y si todo sale bien, aparecerá la pantalla de arranque de debian, si no prueba a cambiar de puerto usb del ordenador o desde otro pendrive. Seleccionamos la primera opción. Esperamos a que arranque el sistema, (será algo lento puesto que u pendrive suele ser mucho mas lento  que un disco duro. (Si durante la instalación el ordenador se suspende no te preocupes el usuario es live y la contraseña user). (Nota, si el sistema una vez le damos a la primera opción no arranca y hemos probado con otro pendrive y otros puertos usb, puede ser que la versión del kernel que use debian no tenga soportado tu hardware, te recomiendo que instales <a href="http://ftp.free.fr/mirrors/ftp.xubuntu.com/releases/20.04/release/">xubuntu</a>, puesto que tiene un kernel más nuevo, lo demás es igual en la instalación y configuración, te recomiendo que instales una versión lts (las que acaban en 04.x dónde x es cualquier número, concretamente instala la versión en la que pone: xubuntu-20.04.2-desktop-amd64.iso)).
+     </p>
+
+     <p>
+         Si no te funciona el touchpad, ve a la bios y selecciona el driver básico de este.
+Una vez iniciado el sistema, abrimos el icono que está en el escritorio en el que pone: instalar debian, seleccionamos el idioma del ordenador, el teclado y nuestra zona horaria, después, le daremos a la opción instalar en una partición, y, seleccionamos la que está en oscuro y tiene el espacio que le habíamos dado. (Nota: si tienes pensado borrar windows o el sistema que tengas, dale a borrar el disco). Seleccionamos el botón de cifrar sistema, ponemos una contraseña y le damos a instalar.  Mientras nos preguntará por nombre de usuario, contraseña de este, contraseña del administrador (root) y nombre de la máquina. Una vez termine la instalación, le damos a reiniciar. Quitamos el pendrive, y, arrancará el menú de inicio (aunque antes te pedirá la contraseña del cifrado que hemos echo al disco, si has puesto en la contraseña una barra baja, quizá se haya cambiado por un signo de interrogación como este: ? ). En el menú podemos ver que se puede seleccionar tanto windows como debian (o ubuntu si tu ordenador no era compatible con la versión del kernel de debian). Cuando arranque, empezaremos con la configuración. (Una nota, cuando ponga dos puntos para algo que tengais que escribir, no pongais el punto del final, lo pongo por la lectura, no porque haya que escribirlo).
+     </p>
+
+     <p>
+        Antes de ver lo siguiente, tienes que saber que para moverte de directorio tienes que poner el comando cd en la terminal, y, a continuación, el nombre del directorio al que quieras ir,(tranquilo/a que te voy a poner los directorios para que no los andes buscando).
+Para instalar programas, deberás conocer el comando de terminal apt, y, que para otorgar permisos del superusuario (administrador), tienes que poner antes la palabra sudo. Te pongo un <a href="https://es.linux-console.net/?p=1119">enlace</a> para que conozcas los comandos. Por último cada vez que ponga que crees un archivo de configuración desde terminal, puedes usar el comando nano, el cual usaremos con permisos de superusuario. (Nota: los llamo comandos para que se entienda mejor, pero en realidad son programas que se usan desde la terminal).
+     </p>
+
+	 <p>
+		 Después de actualizar el sistema, (primero escribimos en la terminal: sudo apt-get update y después sudo apt-get upgrade), empezaremos por el panel, damos click derecho sobre él → panel → preferencias del panel, vamos a elementos. Borramos el menú de aplicaciones seleccionándolo y dándole al menos de la derecha, ahora añadiremos con el botón + de la derecha el menú whisker, con las flechas de la derecha lo pondremos arriba. Para que funcione la tecla win de nuestro teclado a la hora de abrir el cajón de aplicaciones, vamos al programa teclado → atajos  le damos a añadir y ponemos xfce4-popup-whiskermenu y aceptamos. Ahora, le damos a la tecla win de nuestro teclado, y, ya la tendremos configurada. Para que cambie de categoría al poner el ratón encima del panel, vamos a elementos del panel, seleccionamos el menú whisker y y le damos a configuración → comportamiento y seleccionamos cambiar de categoría al apuntarla con el ratón. Para tener los atajos de teclado del volumen, añadiremos el complemento de pulseaudio al panel. Para ver la batería del portátil y cambiar el brillo, vamos al programa administrador de energía y seleccionamos la casilla icono en la bandeja del sistema, también recomiendo activar las notificaciones de estado para que te avise de que tienes la batería baja y cuando se esté cargando. Como estos pasos últimos son para portátiles seleccionaremos también las casillas suspender en los dos menús desplegables de arriba. Si tienes touchpad y quieres activar la simulación de clicks de ratón, vamos a la terminal, y vamos al directorio xorg.conf.d: cd /etc/X11/xorg.conf.d (si no existe, lo creamos: sudo mkdir xorg.conf.d), allí creamos el archivo de configuración 40-libinput.conf: sudo nano 40-libinput.conf. en él ponemos lo siguiente: (Nota: Para guardar los cambios que hagamos en un archivo en el editor de textos de terminal nano, presionaremos la tecla ctrl y luego a la o, (sin soltar la otra tecla), para salir del programa, presionamos ctrl + x).
+	 </p>
+
+	<pre>
+Section "InputClass"
+     Identifier "libinput touchpad catchall"
+     MatchIsTouchpad "on"
+     MatchDevicePath "/dev/input/event*"
+     Option "Tapping" "True"
+     Option "TappingDrag" "True"
+     Driver "libinput"
+EndSection
+	</pre>
+
+	<p>
+		Sé que nos hemos desviado un poco del panel, pero ahora volveremos a él, antes de eso habrás visto que al mover ventanas o navegando por internet tenemos un desagradable screen tearing, para deshacernos de él configuraremos la gráfica en el directorio xorg.conf.d en el que crearemos el archivo 20-intel.conf: sudo nano 20-intel.conf o 20-radeon.conf, (dependiendo de la marca de nuestra gráfica), para nvidia ya pondré algo, en el de intel tengo la siguiente configuración: (Otra nota, algunas opciones pueden no  ser estables en todos los equipos, las que yo pongo en principio son bastante estables para ordenadores de hace 5-10 años con gráficas integradas. Para más opciones dejo unos enlaces y más en adelante exlicaré mejor cómo se comporta cada opción). Para intel dejo la web de <a href="https://www.x.org/releases/current/doc/man/man4/intel.4.xhtml">xorg</a>
+	</p>
+
+	<pre>
+Section "Device"
+  Identifier "Intel Graphics"
+  Driver "intel"
+
+  Option      "AccelMethod"     "SNA"
+  Option      "TearFree"        "true"
+  Option      "DRI"             "3"
+  Option      "TripleBuffer"    "true"
+  Option      "Throttle"        "true"
+  Option      "SwapbuffersWait" "false"
+  Option      "Tiling"          "true"
+EndSection
+	</pre>
+
+<p>
+	Si la anterior configuración te da problemas a la hora de iniciar sesión u otros, te recomiendo que pruebes con la configuración más simple:
+	</p>
+
+	<pre>
+Section "Device"
+  Identifier "Intel Graphics"
+  Driver "intel"
+
+  Option      "AccelMethod"     "SNA"
+  Option      "TearFree"        "true"
+  Option      "DRI"             "3"
+
+EndSection
+	</pre>
+
+	<p>Para radeon-ati tengo esta: (Más opciones en la web de <a href="https://www.x.org/releases/current/doc/man/man4/radeon.4.xhtml">xorg</a></p>
+
+	<pre>
+Section "Device"
+  Identifier  "Mi Tarjeta Gráfica"
+  Driver   "radeon"
+
+  Option   "SWcursor"              "off" 
+  Option   "EnablePageFlip"        "on"  
+  Option   "AccelMethod"           "XAA" 
+  Option   "DRI"                   "3"
+  Option   "RenderAccel"           "on"  
+  Option   "ColorTiling2D"         "on"
+  Option   "ColorTiling"           "on"  
+  Option   "ShadowPrimary"         "off"
+  Option   "EXAVSync"              "off" 
+  Option   "AccelDFS"              "off"  
+  Option   "MigrationHeuristic"    "greedy"
+  Option   "EXAPixmaps"            "on" 
+  Option   "TearFree"              "on"
+EndSection
+	</pre>
+
+<p>
+	Al igual que en la de intel, si experimentas problemas prueba con: (Nota, en el apartado AccelMethod puedes probar con las opciones: XAA, EXA o glamor. Usa la que mejor te vaya).
+	</p>
+
+	<pre>
+Section "Device"
+  Identifier  "Mi Tarjeta Gráfica"
+  Driver   "radeon"
+
+  Option   "AccelMethod"           "EXA" 
+  Option   "DRI"                   "3"
+  Option   "TearFree"              "on"
+EndSection
+	</pre>
+
+<p>
+	Nota: Los cambios no se aplican hasta que cierres sesión o suspendas el ordenador y vuelvas a iniciarla.
+	</p>
+
+	<p>
+		Para quitar el panel gordito de abajo vamos a las preferencias del panel, en el desplegable seleccionamos panel 2 y le damos al – para borrarlo. Para disfrutar del bluethooth debemos instalar el programa blueman: sudo apt-get install blueman, una vez instalado, reiniciamos el sistema, y, una vez arrancado, nos saldrá automáticamente en los iconos. Para que no se esté activando automáticamente cada vez que encendemos el ordenador, (sino que haga lo contrario) pondremos en la terminal lo siguiente: gsettings set org.blueman.plugins.powermanager auto-power-on false. Para tener un filtro de luz azul, instalaremos redshift y redshift-gtk: sudo apt-get install redshift redshift-gtk, después vamos al directorio config: cd ~/config y creamos el archivo redshift.conf con el comando: sudo nano redshift.conf en el que pondremos: 
+	</p>
+
+	<pre>
+[redshift]
+
+temp-day=5500
+temp-night=3700
+
+transition=1
+adjustment-method=randr
+
+location-provider=manual
+[manual]
+
+lat=escribe tuscoordenadas
+lon=escribe tuscoordenada
+	</pre>
+
+	<p>
+		Para buscar tus coordenadas puedes ir <a href=" https://www.coordenadas-gps.com/">siguiente sitio web:</a> Para que se inicie al arrancar el ordenador pondremos lo siguiente en la terminal: systemctl --user enable redshift-gtk Si te parpadea la pantalla activándose y desactivándose, añadir redshift en el apartado de sesión e inicio y desactivar lo anterior con: systemctl --user disable redshift-gtk.
+	</p>
+
+	<p>
+		Para añadir accesos directos en el panel para acceder a los programas más rápido, podemos añadir el elemento lanzador. Una vez echo, lo seleccionamos pulsando el botón de las tres rayas de la derecha, podemos añadir el programa que queramos a dicho lanzador. Para instalar temas para el escritorio de xfce, temas de iconos y el ratón, podemos descargar el appimage de la <a href="https://www.pling.com/p/1175480/ "> pling store</a> (es cómo los programas portables para windows): Para que se ejecute al hacer doble click le damos click derecho al appimage descargado, propiedades → permisos y marcamos la casilla permitir que este archivo se ejecute como un programa. Ahora, le damos doble click y se abrirá.  Ahora, vamos a Linux/unix desktops (barra derecha).  → desktop themes xfce/xfwm4 aquí encontraremos temas para nuestro entorno de escritorio, yo sugiero gizosp por ejemplo, lo escribiremos en la zona superior de búsqueda. Procuramos elegir el de xfce, luego le damos a install seleccionamos la opción que aparece, para aplicarlo, vamos al icono superior de la carpeta y en el apartado xfwm4 themes le damos a apply al tema descargado, la instalación de temas y cursores es igual, solo teneis que ir a la categoría correspondiente. si no se ha aplicado por completo, ve al programa apariencia y selecciona GZOSP. Un tema para ratón que recomiendo, es volante cursors, y, para iconos tela-icons. He estado probando un tema más actual que luego enseñaré a instalarlo. Es muy sencillo ;)
+	</p>
+
+	<p>
+			Para añadir un fondo de pantalla tenemos que dejar la imagen en el directorio que está por encima del de descargas, es decir /home, y, dando click derecho sobre el escritorio, seleccionamos configuración de escritorio, y damos un click a la imagen que hemos añadido. (se puede hacer de otras formas, pero esta es una de ellas).
+		</p>
+
+	<p>
+		Si tienes un procesador de la serie intel bay-trail y se congela el sistema por completo, sin posibilidad de hacer nada hasta que apagas y enciendes el ordenador, ve a la terminal y modifica el archivo grub de la siguiente forma: sudo nano /etc/default/grub. Vamos a la línea dónde pone Grub Cmd line default, vamos al final desplazándonos a la derecha y añadimos lo siguiente: intel_idle_max_estate = 1'
+	</p>
+
+
+	<p>
+		Si gimp no se coloca como debiese al darle al botón de expandir la venta a pantalla completa, te tocará colocarlo manualmente con el ratón y si una parte de abajo no se ve o bien lo sigues colocando hasta que se vea o prueba a coocar el panel en la zona inferior. Para eso deberías crear un segundo panel, colocarlo en la zona de abajo y replicar el panel de arriba para después quitarlo, (lo normal es que no tengas que recurrir a esto). 
+	</p>
+
+	<p>
+		Terminemos con el panel, para que te deje poner cada ventana el el orden que quieras (de las abiertas en el panel), vamos a las preferencias del panel y en elementos configuramos el que dice botones de ventanas, allí en forma de ordenado seleccionamos: ninguno, permitir arrastrar y soltar. Otras opciones que me gustan son las de desmarcar las casillas de mostrar etiquetas de los botones y cambiar de ventanas usando la rueda del ratón. Por último, en agrupar las ventanas, recomiendo seleccionar la opción de siempre.
+	</p>
+
+	<p>
+		Para configurar una impresora de hp instalaremos hplip, una vez instalado, en la teminal podemos configurar una impresora con wifi (si esta lo soporta) o por usb, Con el comando: hp-setup -i y ponemos la dirección ip de nuestra impresora, se puede ver en un icono de la parte de abajo de la pantalla de nuestra impresora, conectamos el ordenador por usb a la impresora y presionamos enter. Nos preguntará que nombre la vamos a poner, yo le doy a m para poner el que sugiere, después, darle a y y enter, luego darle dos veces al enter, volver a darle a la m y otras dos veces enter, esribimos y damos enter y luego otros dos enter. Por último damos y para que nos imprima una página de prueba. Ya tendremos la impresora configurada tanto por wifi cómo por usb (dependiendo de la impresora que tengamos).
+	</p>
+
+	<p>
+		Eso es todo por ahora, seguiré ampliando y mejorando la guía, aunque con esto ya teneis para cubrir prácticamente todas vuestras necesidades de un sistema operativo, también iré recomendando programas, mientras dejo aquí unos cuántos para que los disfruteis tanto como yo: smplayer, gimp, audacity, obs-studio, flowblade, openscad, freecad, libreoffice, chromium, firefox, inkscape, transmission, bird-font, evince, gparted(muy recomendado para el formateo de pendrives, discos duros, etc)...
+	</p>
+
+	<p>
+		Existe un programa que permite hacer compatibles los programas de windows en gnu-linux (wine), cuidado con instalarlo desde sus repositorios en vez de los que ya tienes, puesto que esto te puede estropear la instalación de programas desde cualquier repositorio, esto mismo con los repositorios propios de otros programas, al menos esto me pasó con ubuntu, no he querido probar en debian. En resumen, te recomiendo que instales los programas únicamente desde los repositorios de debian y otros que no estén, descárgalos en su paquete deb y los instalas de esta manera: sudo apt-get install aquí arrastra el paquete deb desde el administrador de archivos y le borras las comillas que se le añaden al nombre en la terminal.
+		</p>
+
+		<p>
+		Si la hora se cambia a una errónea tras suspender el ordenador e iniciarlo, hacer lo siguiente. Primero sudo apt-get install ntp, una vez instalado iniciar el servicio ntp: sudo systemctl enable ntp. Podeis reiniciar el ordenador o activarlo ya con: sudo systemctl start ntp. Luego explico los siguientes comandos: sudo nano /lib/systemd/system/ntprestart.service escribir:  
+		</p>
+
+		<pre>
+[Unit]
+Description=Restart ntp after resume
+After=suspend.target
+
+[Service]
+Type=simple
+ExecStart=/bin/systemctl --no-block restart ntp.service
+# ExecStart=/usr/bin/systemctl --no-block restart ntp.service
+
+[Install]
+WantedBy=suspend.target
+		</pre>
+
+		<p>
+		Guardar salir de nano y escribir: sudo ln -s /lib/systemd/system/ntprestart.service /etc/systemd/system/ Por último iniciamos el servicio y cada vez que encendamos el ordenador: sudo systemctl start ntprestart && sudo systemctl enable ntprestart
+		</p>
+
+		<p>
+		Para arreglar desconexiones ramdom del wifi: Primero: sudo nano /etc/NetworkManager/conf.d/default-wifi-powersave-on.conf una vez abierto poner: 
+		</p>
+
+		<pre>
+# File to be place under /etc/NetworkManager/conf.d
+[connection]
+# Values are 0 (use default), 1 (ignore/don't touch), 2 (disable) or 3 (enable).
+wifi.powersave = 2
+		</pre>
+
+			</div>
+		
+	</main> <!-- / #main-content -->
+
+	
+	
+	<footer id="main-footer">
+		<p>2021 Attribution-ShareAlike 4.0 International CC BY-SA 4.0 <a href="https://miguelhervaspalomares.gitlab.io">Miguelhervaspalomares.gitlab.io</a></p>
+	</footer> <!-- / #main-footer -->
+	<script src="scripts.js"></script>
+</body>
+</html>
+
