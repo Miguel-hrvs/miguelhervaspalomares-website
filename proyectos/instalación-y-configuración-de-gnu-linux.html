@@ -118,17 +118,10 @@ Section "Device"
   Identifier  "Mi Tarjeta Gráfica"
   Driver   "radeon"
 
-  Option   "SWcursor"              "off" 
-  Option   "EnablePageFlip"        "on"  
-  Option   "AccelMethod"           "XAA" 
-  Option   "DRI"                   "3"
-  Option   "RenderAccel"           "on"  
+  Option   "AccelMethod"           "EXA" 
+  Option   "DRI"                   "3" 
   Option   "ColorTiling2D"         "on"
   Option   "ColorTiling"           "on"  
-  Option   "ShadowPrimary"         "off"
-  Option   "EXAVSync"              "off" 
-  Option   "AccelDFS"              "off"  
-  Option   "MigrationHeuristic"    "greedy"
   Option   "EXAPixmaps"            "on" 
   Option   "TearFree"              "on"
 EndSection
@@ -154,7 +147,7 @@ EndSection
 	</p>
 
 	<p>
-		Para quitar el panel gordito de abajo vamos a las preferencias del panel, en el desplegable seleccionamos panel 2 y le damos al – para borrarlo. Para disfrutar del bluethooth debemos instalar el programa blueman: sudo apt-get install blueman, una vez instalado, reiniciamos el sistema, y, una vez arrancado, nos saldrá automáticamente en los iconos. Para que no se esté activando automáticamente cada vez que encendemos el ordenador, (sino que haga lo contrario) pondremos en la terminal lo siguiente: gsettings set org.blueman.plugins.powermanager auto-power-on false. Para tener un filtro de luz azul, instalaremos redshift y redshift-gtk: sudo apt-get install redshift redshift-gtk, después vamos al directorio config: cd ~/config y creamos el archivo redshift.conf con el comando: sudo nano redshift.conf en el que pondremos: 
+		Para quitar el panel gordito de abajo vamos a las preferencias del panel, en el desplegable seleccionamos panel 2 y le damos al – para borrarlo. Para disfrutar del bluethooth debemos instalar el programa blueman: sudo apt-get install blueman, una vez instalado, reiniciamos el sistema, y, una vez arrancado, nos saldrá automáticamente en los iconos. Para que no se esté activando automáticamente cada vez que encendemos el ordenador, (sino que haga lo contrario) pondremos en la terminal lo siguiente: gsettings set org.blueman.plugins.powermanager auto-power-on false. Para tener un filtro de luz azul, instalaremos redshift y redshift-gtk: sudo apt-get install redshift redshift-gtk, después vamos al directorio config: cd ~/.config y creamos el archivo redshift.conf con el comando: nano redshift.conf (importante no poner sudo, ya que si creamos el archivo de configuración de este programa como superusuario nos dará errores), en el que pondremos: 
 	</p>
 
 	<pre>
@@ -199,15 +192,15 @@ lon=escribe tuscoordenada
 	</p>
 
 	<p>
-		Para configurar una impresora de hp instalaremos hplip, una vez instalado, en la teminal podemos configurar una impresora con wifi (si esta lo soporta) o por usb, Con el comando: hp-setup -i y ponemos la dirección ip de nuestra impresora, se puede ver en un icono de la parte de abajo de la pantalla de nuestra impresora, conectamos el ordenador por usb a la impresora y presionamos enter. Nos preguntará que nombre la vamos a poner, yo le doy a m para poner el que sugiere, después, darle a y y enter, luego darle dos veces al enter, volver a darle a la m y otras dos veces enter, esribimos y damos enter y luego otros dos enter. Por último damos y para que nos imprima una página de prueba. Ya tendremos la impresora configurada tanto por wifi cómo por usb (dependiendo de la impresora que tengamos).
+		Para configurar las impresoras deberemos instalar este programa: system-config-printer. Primero veremos las de red, simplemente deberemos encender nuestra impresora y tenerla conectada al mismo router de forma inalámbrica que el ordenador, abrimos el programa de impresoras, le damos a la opción servidor y después a configuración. Allí, marcamos todas las opciones, (no hacen falta las avanzadas).
 	</p>
 
 	<p>
-		Eso es todo por ahora, seguiré ampliando y mejorando la guía, aunque con esto ya teneis para cubrir prácticamente todas vuestras necesidades de un sistema operativo, también iré recomendando programas, mientras dejo aquí unos cuántos para que los disfruteis tanto como yo: smplayer, gimp, audacity, obs-studio, flowblade, openscad, freecad, libreoffice, chromium, firefox, inkscape, transmission, bird-font, evince, gparted(muy recomendado para el formateo de pendrives, discos duros, etc)...
+		Eso es todo por ahora, seguiré ampliando y mejorando la guía, aunque con esto ya teneis para cubrir prácticamente todas vuestras necesidades de un sistema operativo, también iré recomendando programas, mientras dejo aquí unos cuántos para que los disfruteis tanto como yo: smplayer, gimp, audacity, obs-studio, flowblade, openscad, freecad, libreoffice, chromium, firefox, inkscape, transmission, bird-font, evince, gparted(muy recomendado para el formateo de pendrives, discos duros, etc), rythmbox, openscad, freecad, cinelerra, darktable, rawtherapee, goxel, leocad, libresprite, pencil2d, peek, scribus, sweethome3d, gcolor3, musescore, wings3d, prusa-slicer, ninja-build, qreator, grafx2, ardour, mixxx, wireshark, arduino-ide, vmpk, qwertone, cheese, gparted, hydrogen, geogebra, clamtk, simple-scan, zbarcam-gtk, emacs, node-almond, easyssh, filezilla, gnome-genius, manuskript, gnome-maps, birdfont, python3, python3-pip, python3-setuptools, python3-wheel, kdeconnect, octave, octave-arduino, openboard, espeak-ng, freetts, yasr, labplot, audacity, siril, starplot, texlive, stellarium, ngspice, pngcrush, trimage, abiword, freeplane, focuswriter, pdfsam, homebank, gnucash, gdebi, dict-freedict-eng-spa, thunderbird, pandoc, josm, gpredict, tuxpaint, elinks. 
 	</p>
 
 	<p>
-		Existe un programa que permite hacer compatibles los programas de windows en gnu-linux (wine), cuidado con instalarlo desde sus repositorios en vez de los que ya tienes, puesto que esto te puede estropear la instalación de programas desde cualquier repositorio, esto mismo con los repositorios propios de otros programas, al menos esto me pasó con ubuntu, no he querido probar en debian. En resumen, te recomiendo que instales los programas únicamente desde los repositorios de debian y otros que no estén, descárgalos en su paquete deb y los instalas de esta manera: sudo apt-get install aquí arrastra el paquete deb desde el administrador de archivos y le borras las comillas que se le añaden al nombre en la terminal.
+		Existe un programa que permite hacer compatibles los programas de windows en gnu-linux (wine), para tener la úlyima versión de este programa, deberemos ir a la <a href="https://www.winehq.org/">web oficial</a> e instalarlo tras añadir sus repositorios oficiales.
 		</p>
 
 		<p>
