@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<script src="jquery-3.5.1.min.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>MHP Home</title>
+
+        <link rel="stylesheet" href="../index.css">
+		<link rel="icon" href="../favicon.png" type="image/png">
+
+</head>
+
+<body>
+	
+	<header id="main-header">
+		<div class="container logo-nav-container">
+			<a href="../index.html" class="logo">MHP</a>
+			<span class="menu-icon">Menú</span>
+		<nav class="navigation">
+			<ul>
+				<li><a href="../index.html">Inicio</a></li>
+				<li><a href="/proyectos/proyectos.html">Proyectos</a></li>
+				<li><a href="/webs-recomendadas/webs-recomendadas.html">Webs recomendadas</a></li>
+				<li><a href="/herramientas-de-interés/herramientas-de-interés.html">Herramientas de interés</a></li>
+				<li><a href="/artículos/artículos.html">Artículos</a></li>
+			</ul>
+		</nav><!-- / nav -->
+		</div>
+	</header><!-- / #main-header -->
+
+	
+	<main class="main">
+		<div class="container">
+			
+			<header>
+				<h1>Instalación y configuración de un sistema gnu-linux</h1>
+			</header>
+			
+			
+			<div class="content">
+       <p>
+            Nota: Esta guía está en desarrollo, por lo que por ahora está incompleta.
+         </p>
+		 <p>
+            Bienvenidos/as a la guía de instalación de sistemas gnu-linux con el protocolo wayland, este está siendo desarrollado para sustituir a x.org (el cual ya no se está desarrollando ni recibiendo actualizaciones de seguridad. Además de esto, no tenemos que configurar ningún archivo para no tener el conocido screen tearing ni nada por el estilo para obtener buen rendimiento. Viene bien puesto que algunos equipos pueden no funcionar correctamente x.org, o bien porque no hemos configurado como deberíamos el archivo y puede ser un poco molesto ver qué hay que añadir o bien porque con este programa bastante antiguo, no funcione porque sí. En este caso la guía se llevará a cabo con ubuntu y el escritorio gnome. (También podéis instalar debian con gnome que también usa wayland). En la versión 20.04 de ubuntu habrá que elegirlo al iniciar sesión de x.org y en versiones posteriores estará wayland activado por defecto. Los mayores problemas que podemos encontrarnos es que algunos programas no son compatibles con wayland y tendremos que usar una capa de compatibilidad, y, que no podemos usar programas gráficos con permisos de superusuario. Aún así mostraré los sustitutos a algunos programas y problema resuelto.  
+         </p>
+
+			</div>
+		
+	</main> <!-- / #main-content -->
+
+	
+	
+	<footer id="main-footer">
+		<p>2021 Attribution-ShareAlike 4.0 International CC BY-SA 4.0 <a href="https://miguelhervaspalomares.gitlab.io" target="_blank">Miguelhervaspalomares.gitlab.io</a></p>
+	</footer> <!-- / #main-footer -->
+	<script src="scripts.js"></script>
+</body>
+</html>
+
+   
