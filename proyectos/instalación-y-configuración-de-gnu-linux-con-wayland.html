@@ -43,8 +43,29 @@
             Nota: Esta guía está en desarrollo, por lo que por ahora está incompleta.
          </p>
 		 <p>
-            Bienvenidos/as a la guía de instalación de sistemas gnu-linux con el protocolo wayland, este está siendo desarrollado para sustituir a x.org (el cual ya no se está desarrollando ni recibiendo actualizaciones de seguridad. Además de esto, no tenemos que configurar ningún archivo para no tener el conocido screen tearing ni nada por el estilo para obtener buen rendimiento. Viene bien puesto que algunos equipos pueden no funcionar correctamente x.org, o bien porque no hemos configurado como deberíamos el archivo y puede ser un poco molesto ver qué hay que añadir o bien porque con este programa bastante antiguo, no funcione porque sí. En este caso la guía se llevará a cabo con ubuntu y el escritorio gnome. (También podéis instalar debian con gnome que también usa wayland). En la versión 20.04 de ubuntu habrá que elegirlo al iniciar sesión de x.org y en versiones posteriores estará wayland activado por defecto. Los mayores problemas que podemos encontrarnos es que algunos programas no son compatibles con wayland y tendremos que usar una capa de compatibilidad, y, que no podemos usar programas gráficos con permisos de superusuario. Aún así mostraré los sustitutos a algunos programas y problema resuelto.  
+            Bienvenidos/as a la guía de instalación de sistemas gnu-linux con el protocolo wayland, este está siendo desarrollado para sustituir a x.org (el cual ya no se está desarrollando ni recibiendo actualizaciones de seguridad). Además de esto, no tenemos que configurar ningún archivo para no tener el conocido screen tearing ni nada por el estilo para obtener un buen rendimiento. Viene bien puesto que algunos equipos pueden no funcionar correctamente x.org, o bien porque no hemos configurado como deberíamos el archivo y puede ser un poco molesto ver qué hay que añadir o bien porque con este programa bastante antiguo, no nos funcione algo porque sí. En este caso la guía se llevará a cabo con ubuntu y el escritorio gnome. (También podéis instalar debian con gnome que también usa wayland). En la versión 20.04 de ubuntu habrá que elegirlo al iniciar sesión de x.org y en versiones posteriores estará wayland activado por defecto. Los mayores problemas que podemos encontrarnos es que algunos programas no son compatibles con wayland y tendremos que usar una capa de compatibilidad, y, que no podemos usar programas gráficos con permisos de superusuario (bajo wayland, sí con xwayland que se trata de la capa de compatibilidad).
          </p>
+				
+	 <p>
+            La instalación de debian y ubuntu tiene la misma explicación que en la anterior guía. Hos dejo los enlaces de descarga de cada uno: <a href="https://ubuntu.com/download/desktop">ubuntu</a> <a href="https://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware/current-live/amd64/iso-hybrid/debian-live-10.9.0-amd64-gnome+nonfree.iso">debian</a>
+         </p>		
+		
+	<p>
+            En el primer arranque de ubuntu una vez instalado, nos aparecer una serie de sugerencias, en la que pone compartir datos anónimos (telemetría), seleccionamos la casilla en la que pone no. Ahora vamos a desactivar las actualizaciones automáticas (son muy molestas), lo haremos de esta manera, abriremos dos archivos en los que dónde pone un 1 (significa activado), pondremos un 0 (desactivado). Los abriremos así en la terminal: sudo nano /etc/apt/apt.conf.d/10periodic
+ y para abrir el otro: sudo nano /etc/apt/apt.conf.d/20auto-upgrades. Podéis guardar los archivos con las teclas ctrl + O y cerrar el programa con ctrl + X.
+         </p>	
+				
+	<p>
+            Para poder cambiar el fondo de pantalla, quitar animaciones y otras cosas, instalaremos el siguiente programa desde terminal: sudo apt-get install gnome-tweak-tool. En la primera sección podremos desactivar las animaciones, en la sección ventanas recomiendo desactivar el ajuste en los bordes y, en la sección de áreas de trabajo, recomiendo seleccionar la opción de áreas de trabajo estáticas, esto mejorará la fluidez del escritorio gnome, (más pesado que xfce, el cual utilicé para la anterior guía).
+         </p>	
+				
+	<p>
+            Para poder cambiar el fondo de pantalla, quitar animaciones y otras cosas, instalaremos el siguiente programa desde terminal: sudo apt-get install gnome-tweak-tool. En la primera sección podremos desactivar las animaciones, en la sección ventanas recomiendo desactivar el ajuste en los bordes y, en la sección de áreas de trabajo, recomiendo seleccionar la opción de áreas de trabajo estáticas, esto mejorará la fluidez del escritorio gnome, (más pesado que xfce, el cual utilicé para la anterior guía).
+         </p>	
+				
+	<p>
+            Otros temas como filtros de luz azul, correcto ajuste de la hora, etc los podéis encontrar en la <a href="https://miguelhervaspalomares.ml/proyectos/instalaci%C3%B3n-y-configuraci%C3%B3n-de-gnu-linux.html">otra guía</a>
+         </p>			
 
 			</div>
 		
@@ -53,7 +74,7 @@
 	
 	
 	<footer id="main-footer">
-		<p>2021 Attribution-ShareAlike 4.0 International CC BY-SA 4.0 <a href="https://miguelhervaspalomares.gitlab.io" target="_blank">Miguelhervaspalomares.gitlab.io</a></p>
+		<p>2021 Attribution-ShareAlike 4.0 International CC BY-SA 4.0 <a href="https://miguelhervaspalomares.ml" target="_blank">Miguelhervaspalomares.ml</a></p>
 	</footer> <!-- / #main-footer -->
 	<script src="scripts.js"></script>
 </body>
