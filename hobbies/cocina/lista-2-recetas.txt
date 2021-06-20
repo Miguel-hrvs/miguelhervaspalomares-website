@@ -1,0 +1,72 @@
+Nuevo listado de recetas:
+
+	- Patatas alioli: https://www.youtube.com/watch?v=gBL7rRxHq4s
+	- Ochios: https://www.youtube.com/watch?v=aVqJLmZZBjI
+	- Pollo a la cazadora: https://www.youtube.com/watch?v=esv-yQwbeso
+	- Pollo al ajillo: https://www.youtube.com/watch?v=IjeX167Iwbs
+	- Champiñones al ajillo: https://www.youtube.com/watch?v=6ncJyJ2bNqI
+	- Hummus de garbanzos: https://www.youtube.com/watch?v=CbEHg9aFz3A
+	- Tahini: https://www.youtube.com/watch?v=Pt931ZvzN0E
+	- Empanada de pollo: https://www.youtube.com/watch?v=7bE75sFnsPc
+	- Guiso de habas: https://www.youtube.com/watch?v=3OgIeQOUOMk
+	- Chipirones al ajillo: https://www.youtube.com/watch?v=maJ6HBQTRHs&t=83s
+	- Pasta carbonara: https://www.youtube.com/watch?v=OIs9tgALGNU
+	- Empanada gallega de pollo: https://www.youtube.com/watch?v=GQx9DGdDN7g
+	- Hamburguesa vegetariana: https://www.youtube.com/watch?v=nak7RjMSAiw
+	- Pollo a la catalana: https://www.youtube.com/watch?v=PkUrPk7lidA
+	- Arroz con leche: https://www.youtube.com/watch?v=xQsPiAf-t1Q
+	- Croquetas de jamón: https://www.youtube.com/watch?v=BMBSuUDnGPU
+	- Tomates rellenos: https://www.youtube.com/watch?v=V1soiI6d4qk
+	- Masa madre: https://www.youtube.com/watch?v=TNHfPVbmit8
+	- Pan con masa madre: https://www.youtube.com/watch?v=6-fzLZDovM4&t=0s
+	- Solomillo wellington: https://www.youtube.com/watch?v=bNDh4QWbPC4
+	// Comida japonesa
+	- Sopa de ramen: https://www.youtube.com/watch?v=NlGv1M52pTM
+	- Bolas de arroz (onigiri): https://www.youtube.com/watch?v=49m9sxw_xh4
+	- Miso nikomi udon: https://www.youtube.com/watch?v=GV0UuDIq010
+	- Dorayaki: https://www.youtube.com/watch?v=yEDfHvHqi3w
+	- Oyako donburi (pollo y huevo sobre arroz): https://www.youtube.com/watch?v=lC6wDpGEDdw
+	// Comida de Jaén
+	- RinRan: https://www.youtube.com/watch?v=yg-Uckwn2bw
+	- Ajoatao: https://www.youtube.com/watch?v=YBeTuzAGsA0
+	- Huevos a la flamenca: https://www.youtube.com/watch?v=-9AhhDaKRck
+	- Pipirrana de jaén: https://www.youtube.com/watch?v=C_9UKM9OsYw
+	- Cazuela baezana: https://cocinandoentreolivos.com/2018/03/cazuela-baezana-receta-tradicional-semana-santa-baeza.html
+	// Comida de extremadura
+	- Zorongollo: hhttps://www.directoalpaladar.com/recetas-de-legumbres-y-verduras/receta-zorongollo-tradicional-deliciosa-ensalada-extremena-pimientos
+	- Bacalao dorado: https://www.directoalpaladar.com/recetas-de-pescados-y-mariscos/receta-de-bacalao-dorado-y-tres-trucos-para-hacerlo-de-la-forma-mas-rapida-posible
+	// Comida de valladolid
+	- Caldo casero de pollo: https://www.youtube.com/watch?v=59G6h5MUTSs
+	- Sopa de ajo: https://www.youtube.com/watch?v=PIor70xh8ro
+	// Comida de Castilla y León
+	- Asadillo manchego: https://www.directoalpaladar.com/recetas-de-legumbres-y-verduras/asadillo-manchego-receta
+	- Pisto manchego: https://www.directoalpaladar.com/recetas-de-legumbres-y-verduras/pisto-manchego-con-huevos-escalfados-receta
+	- Gachas manchegas: https://www.juliaysusrecetas.com/2015/05/gachas-manchegas-de-pitos-o-almortas.html
+	- Carcamusas toledanas con tallarines: https://www.directoalpaladar.com/recetas-de-pasta/tallarines-con-carcamusas-toledanas-receta
+	- Caldereta de cordero: https://www.directoalpaladar.com/recetas-de-carnes-y-aves/receta-de-caldereta-de-cordero
+	- Atascaburras (bacalao con patatas): https://www.directoalpaladar.com/recetas-de-pescados-y-mariscos/atascaburras-murciano-o-bacalao-con-patatas-receta-de-semana-santa 
+	// Comida valenciana
+	- Titaina: https://www.youtube.com/watch?v=tzMyYBIJ2-Y
+	- All i pebre: https://www.youtube.com/watch?v=XxCZqNfNs3Q
+	- Coca de tomate y pimiento: https://www.youtube.com/watch?v=fh1raHn5ndE
+	// Comida catalana:
+	- Crema catalana: https://www.youtube.com/watch?v=2zDXQOYt_Fg
+	- Coca de sardinas: https://www.youtube.com/watch?v=JY3hs2VSUDc
+	- Arroz negro: https://www.youtube.com/watch?v=wiqkYw3Dxzg
+	- Esqueixada: https://www.youtube.com/watch?v=DnuXQET0utU
+	- Mel i mató: https://www.youtube.com/watch?v=WOB5taS8KRc
+	// Comida vasca
+	- Bacalao al pil pil: https://www.youtube.com/watch?v=MQDr5FfNsl8
+	- Marmitako: https://www.youtube.com/watch?v=YoqL_Ptp778
+	- Merluza a la vasca: https://www.youtube.com/watch?v=HJxVt7DwgYo
+	- kokotxas en salsa verde: https://www.youtube.com/watch?v=n8CHOt8uQTQ
+	- Revuelto de perretxikos: https://www.youtube.com/watch?v=jvPFmM93QFA
+	- Lubina a la donostiarra: https://www.youtube.com/watch?v=KjVeqGbOcRA
+	- Sukalki: https://www.youtube.com/watch?v=9nIsjw8reIU
+	- Alubias de tolosa: https://www.youtube.com/watch?v=WlaWrfkNpis
+	- Patatas en salsa verde con huevo: https://www.youtube.com/watch?v=QWimN3MGXek
+	// Recetas murcianas
+	- Caldero del mar menor: https://www.youtube.com/watch?v=QWimN3MGXek
+	- Michirones: https://www.youtube.com/watch?v=9cP9X60E91M
+	- Pastel de carne murciano: https://www.youtube.com/watch?v=SgSX9fkSMUw
+	- 
